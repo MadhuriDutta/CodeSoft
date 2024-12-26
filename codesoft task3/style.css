@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    font-weight: bold
+}
+body{
+    background-image:url('bg.avif') ;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding-right: 240px;
+}
+
+.calculator{
+    background: #2823368c;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 0px 3px 15px rgba(0, 0,0,0.8);
+    
+}
+.calculator input{
+    border: 0;
+    outline: 0;
+    width: 320px;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: -8px -8px 15px rgba(270,270 ,270,0.1), 5px 5px 15px rgba(0,0 ,0,0.2);
+    background: rgba(0, 0, 0, 0.502);
+    font-size: 20px;
+    text-shadow: 0px 1px 5px rgba(0,0 ,0,0.2);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.913);
+    margin: 10px;
+    text-align: right;
+    border:solid 1px rgba(255, 255, 255,0.2)
+}
+input::placeholder{
+    color: rgb(239, 238, 238);
+
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    color: white;
+    background: #00000082;
+    font-size: 18px;
+    cursor: pointer;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    text-shadow: 0px 1px 5px rgba(20, 20, 20, 0.155);
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.269);
+}
+.ac,.del{
+    font-size: 20px;
+}
+button:hover{
+    color: #ffffff;
+    background: #313164b8;;
+}
+
+.equal{
+    background: blue;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.equal:hover{
+    color: rgb(253, 148, 0);
+    background: rgba(70, 70, 234, 0.808);
+
+}
+.control:hover{
+    color: rgb(253, 148, 0);
+    border: solid 1px rgb(253, 148, 0);
+    box-shadow: -2px 3px 13px rgba(253, 148, 0, 0.637);
+}
+.control:active{
+    color: rgb(253, 148, 0);
+    border: solid 1px rgb(253, 148, 0);
+    box-shadow: -2px 3px 13px rgba(253, 148, 0, 0.650);
+}
+body h2{
+    font-size: 70px;
+    padding-right:100px ;
+    color: white;
+    text-shadow:  3px 6px 9px whitesmoke;
+    
+}
+span{
+    color:rgb(253, 148, 0) ;
+    font-size: 80px;
+    text-shadow:  3px 6px 9px rgb(253, 148, 0);
+
+}
+.name{
+    padding-right:100px ;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style:groove;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left-width: 10px;
+    border-color:white;
+}
+.name:hover{
+    border-color:rgb(253, 148, 0);
+    transition: 1ms;
+}

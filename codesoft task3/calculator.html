@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name">
+        <h2><span>C</span>ALCULATO<span>R</span></h2>
+    </div>
+        <div class="calculator right">
+            
+                <div class="display">
+                    <input type="text" placeholder="0" name="display" id="inputbox" class="input" readonly> <!---input space-->
+                </div>
+                <div >
+                    <button class="control ac" onclick="clearDisplay()">AC</button>  <!---AC BUTTON-->
+                    <button class="control del" id="del" >DEL</button> <!---DEL BUTTON-->
+                    <button class="control" onclick="appendToDisplay('%')">%</button>
+                    <button class="control" onclick="appendToDisplay('/')">/</button><!---DIV BUTTON-->
+                </div>
+                <div >
+                    <button onclick="appendToDisplay('7')">7</button> 
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button><!---9 BUTTON-->
+                    <button  class="control" onclick="appendToDisplay('*')" >*</button> <!---mul BUTTON-->
+                </div>
+                <div  >
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')"> 6</button> <!---6 BUTTON-->
+                    <button class="control" onclick="appendToDisplay('-')" >-</button> <!---sub BUTTON-->
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button> <!---6 BUTTON-->
+                    <button class="control" onclick="appendToDisplay('+')" >+</button>  <!---add BUTTON-->
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button> <!---6 BUTTON-->
+                    <button class="equal" onclick="calculate()" >=</button>  <!---3 BUTTON-->
+                </div>
+                
+            
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
